@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+/*Variaveis Css*/
+/*Com as variaveis, é possível criar uma pré definição a ser usada 
+na estilização, ao invés de passar e repetir uma por uma*/
+/**/
+/*With variables, it is possible to create a pre-definition to be used
+in styling, instead of going through and repeating one by one*/
+:root {
+  --header-height: 3rem;
+
+  /*colors*/
+  /*
+  fonts
+  #3e4147 black
+  #2a2c31 black +
+  #dbdea6 
+
+  background
+  #dbdea6
+ #d1bd95
+ ----
+ #edeedd
+ #e4e5cc
+
+ details
+ #8c686b
+ #391b4a
+ #d1f7ba
+  */
+  /*----COLORS----*/
+  --body-color: #fffedf;
+  --container-color: #d1bd95;
+  --details-color: #391b4a;
+  --black-color: #2a2c31;
+  --black-color-light: #3e4147;
+  --white-color: #ffffff;
+  --white-dark: #f6f6ee;
+
+  /*---FONT---*/
+  --body-font: "Roboto Condensed", sans-serif;
+  --text-color-black: #2a2c31;
+  --text-color-white: #ffffff;
+
+  /*----FONT-WEIGHT----*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  /*-----Z index------*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+/*========START STYLING==========*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--body-font);
+  font-size: var();
+  background-color: var(--body-color);
+  color: var(--text-color-black);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-color-black);
+  font-weight: var(--font-bold);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
