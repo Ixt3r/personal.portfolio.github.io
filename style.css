@@ -32,10 +32,10 @@ in styling, instead of going through and repeating one by one*/
   --body-color: #fffedf;
   --container-color: #d1bd95;
   --details-color: #391b4a;
-  --black-color: #2a2c31;
-  --black-color-light: #3e4147;
+  --black-color: #1a1a1b;
+  --black-color-light: #606060;
   --white-color: #ffffff;
-  --white-dark: #f6f6ee;
+  --white-dark: #adafb8;
 
   /*---FONT---*/
   --body-font: "Roboto Condensed", sans-serif;
@@ -85,3 +85,125 @@ img {
   height: auto;
 }
 /*----HEADER E NAV ----*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+  transition: box-shadow 0.4s;
+}
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+  font-weight: var(--font-bold);
+  color: var(--black-color);
+}
+.nav-logo-circle,
+.nav-toggle {
+  width: 32px;
+  height: 32px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  display: grid;
+  place-items: center;
+}
+.nav-logo-circle {
+  border-radius: 50%;
+}
+.nav-toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+/*--------MOBILE---------*/
+@media screen and (max-width: 1150px) {
+  .nav-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: #444445;
+    width: 100%;
+    padding-block: 1.8rem 5rem;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    transition: top 0.4;
+  }
+
+  .nav-title,
+  .nav-name,
+  .nav-close {
+    color: var(--white-color);
+  }
+  .nav-title {
+    display: block;
+    font-size: 14px;
+    font-weight: var(--font-medium);
+    margin-bottom: 3.5rem;
+  }
+  .nav-name {
+    position: relative;
+    width: max-content;
+    margin: 0 auto 3rem;
+    font-size: 24px;
+  }
+  .nav-name::before,
+  .nav-name::after {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: #fffedf;
+    position: absolute;
+    top: 50%;
+    left: -4rem;
+  }
+  .nav-name::before {
+    left: initial;
+    right: -4rem;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+  .nav-link {
+    position: relative;
+    color: var(--white-dark);
+    font-size: 24px;
+    font-weight: var(--font-medium);
+    transition: color 0.3s;
+  }
+  .nav-link::after {
+    content: "";
+    /* width: 25%;*/
+    height: 2px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    transition: width 0.3s;
+  }
+  .nav-link:hover {
+    color: var(--white-color);
+  }
+  .nav-link:hover::after {
+    width: 25%;
+  }
+  .nav-close {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+  }
+
+  /*--Show menu--*/
+}
