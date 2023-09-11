@@ -206,4 +206,7 @@ img {
   }
 
   /*--Show menu--*/
+  .show-menu {
+    top: 0;
+  }
 }
