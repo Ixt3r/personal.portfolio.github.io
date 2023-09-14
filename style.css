@@ -135,7 +135,7 @@ img {
     padding-block: 1.8rem 5rem;
     text-align: center;
     backdrop-filter: blur(8px);
-    transition: top 0.4;
+    transition: top 0.4s;
   }
 
   .nav-title,
