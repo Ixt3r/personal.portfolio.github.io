@@ -288,12 +288,111 @@ img {
   z-index: 10;
 }
 .home-shadow {
+  background-color: var(--white-dark);
   width: 100%;
   height: 100%;
-  background-color: var(--white-dark);
+
   position: absolute;
   bottom: -0.75rem;
   right: -0.75rem;
   border: 4px solid var(--black-color);
   z-index: 5;
+  transition: background-color 0.4s;
+}
+.home-arrow,
+.home-line {
+  width: 50px;
+  position: absolute;
+  filter: invert(1);
+
+  transition: filter 0.4s;
+}
+.home-arrow {
+  bottom: -4rem;
+  left: 40%;
+}
+.home-line {
+  bottom: -0.5rem;
+  right: -2rem;
+}
+.home-perfil .geometric-box {
+  left: -0.7rem;
+  z-index: 10;
+  top: 2.5rem;
+}
+.home-social {
+  display: grid;
+  row-gap: 1rem;
+  height: max-content;
+  position: absolute;
+  left: -3rem;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.home-social-link {
+  padding: 6px;
+  display: grid;
+  place-items: center;
+  background-color: var(--black-color-light);
+  color: var(--body-color);
+  font-size: 1.25rem;
+
+  transition: background-color 0.3s;
+}
+.home-social-link:hover {
+  background-color: var(--black-color);
+}
+.home-info {
+  margin-top: 4rem;
+}
+.home-description {
+  text-align: center;
+  color: var(--text-color-black);
+  margin-bottom: 1.5rem;
+}
+.home-description b {
+  background: linear-gradient(
+    90deg,
+    hsla(284, 89%, 25%, 0.3),
+    hsla(276, 98%, 32%, 0)
+  );
+}
+.home-scroll {
+  display: block;
+  width: max-content;
+  margin: auto;
+}
+.home-scroll-text {
+  display: none;
+}
+.home-scroll-box {
+  background-color: var(--black-color);
+  display: grid;
+  color: var(--body-color);
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.4s;
+}
+.home-scroll-box i {
+  animation: scroll-down 3s infinite;
+}
+/* ----animate scroll icon ----*/
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0.6rem);
+    opacity: 0;
+  }
 }
