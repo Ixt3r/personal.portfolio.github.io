@@ -293,7 +293,7 @@ img {
   z-index: 10;
 }
 .home-shadow {
-  background-color: var(--white-dark);
+  background-color: var(--details-color);
   width: 100%;
   height: 100%;
 
@@ -304,7 +304,13 @@ img {
   z-index: 5;
   transition: background-color 0.4s;
 }
-.home-arrow,
+.home-arrow {
+  width: 50px;
+  position: absolute;
+  /*filter: invert(1);*/
+
+  transition: filter 0.4s;
+}
 .home-line {
   width: 50px;
   position: absolute;
@@ -476,7 +482,7 @@ img {
 }
 .about-line {
   filter: invert(1);
-  right: -1.25rem;
+  right: -1.8rem;
   top: 6rem;
   width: 50px;
   transition: filter 0.4s;
