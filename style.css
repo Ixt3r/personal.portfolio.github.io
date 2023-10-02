@@ -647,3 +647,65 @@ img {
   background-color: var(--body-color);
 }
 /*-----CONTACT-----*/
+.contact {
+  padding-bottom: 0;
+}
+.contact-container {
+  position: relative;
+  grid-template-rows: 300px max-content max-content;
+  row-gap: 0;
+}
+.contact-data {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: var(--container-color);
+  padding: 3rem 1.5rem 3.5rem;
+  margin-left: auto;
+  border-bottom: 4px solid var(--details-color);
+  z-index: 5;
+  transition: background-color 0.4s;
+}
+.contact-data .section-title-2 {
+  margin: 0 0 1.5rem;
+  transform: translateX(-3rem);
+}
+.contact-description-1 {
+  color: var(--text-color-black);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.contact-description-2 {
+  color: var(--text-color-black);
+  font-size: 14px;
+}
+.contact-data .geometric-box {
+  top: 2rem;
+  right: 2.5rem;
+}
+.contact-mail {
+  position: relative;
+  background-color: #100010;
+  padding: 5rem 1.5rem 2.5rem;
+  margin-top: -2.5rem;
+  transition: background-color 0.4s;
+}
+.contact-title {
+  color: var(--text-color-white);
+  font-size: 18px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.contact-form,
+.contact-group {
+  display: grid;
+  row-gap: 1.25rem;
+}
+.contact-form {
+  position: relative;
+}
+.contact-box {
+  position: relative;
+  width: 100%;
+  height: 58px;
+}
