@@ -708,4 +708,110 @@ img {
   position: relative;
   width: 100%;
   height: 58px;
+  margin-bottom: 2rem;
+}
+.contact-input,
+.contact-button {
+  font-size: 14px;
+  outline: none;
+  border: none;
+}
+.contact-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #100010;
+  border: 3px solid var(--black-color-light);
+  color: var(--text-color-black);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: border 0.4s, background-color 0.4s;
+}
+.contact-input::placeholder {
+  color: var(--black-color-light);
+  transition: opacity 0.4s;
+}
+.contact-input:focus {
+  border: 3px solid var(--text-color-white);
+}
+/*
+.contact-input:-webkit-autofill {
+  transition: background-color 6000s, color 6000s;
+}*/
+.contact-label {
+  position: absolute;
+  top: -16px;
+  left: 10px;
+  color: var(--black-color-light);
+  font-weight: 600;
+  background-color: #100010;
+  padding: 8px;
+  pointer-events: none;
+  transition: top 0.4s, opacity 0.4s, background-color 0.4s;
+  opacity: 0;
+}
+.contact-form .contact-area {
+  height: 10rem;
+}
+.contact-area textarea {
+  resize: none;
+  padding-top: 1rem;
+}
+.contact-button {
+  background-color: var(--details-color);
+  cursor: pointer;
+}
+/*placeholder opaque*/
+.contact-input:focus::placeholder {
+  opacity: 0;
+}
+/*move label up and sticky label*/
+.contact-input:focus + .contact-label,
+.contact-input:not(:placeholder-shown).contact-input:not(:focus)
+  + .contact-label {
+  opacity: 1;
+  top: -16px;
+}
+.contact-social {
+  display: grid;
+  row-gap: 1rem;
+  background-color: hsl(0, 0, 10%);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contact-social-arrow {
+  width: 32px;
+  margin: 0 auto;
+}
+.contact-social-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.contact-social-description-1 {
+  color: var(--black-color-light);
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+.contact-social-description-2 {
+  color: var(--text-color-white);
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact-social-links {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.75rem;
+}
+.contact-social-link {
+  background-color: var(--black-color-light);
+  padding: 6px;
+  color: var(--white-color);
+  font-size: 1.25rem;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.3s;
+}
+.contact-social-link:hover {
+  background-color: var(--details-color);
 }
