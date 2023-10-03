@@ -815,3 +815,29 @@ img {
 .contact-social-link:hover {
   background-color: var(--details-color);
 }
+/*  ----- FOOTER ------------ */
+.footer {
+  background-color: #100010;
+  row-gap: 2.5rem;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+.footer-link {
+  color: var(--black-color-light);
+  transition: color 0.4s;
+}
+.footer-link:hover {
+  color: var(--text-color-white);
+}
+.footer-copy {
+  color: var(--black-color-light);
+  font-size: 14px;
+  text-align: center;
+}
+.footer-copy a {
+  color: var(--black-color-light);
+  font-weight: 600;
+}
