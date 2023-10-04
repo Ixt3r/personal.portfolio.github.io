@@ -36,6 +36,7 @@ in styling, instead of going through and repeating one by one*/
   --black-color-light: #a0a0a0;
   --white-color: #ffffff;
   --white-dark: #adafb889;
+  --color-dark: #100010;
 
   /*---FONT---*/
   --body-font: "Roboto Condensed", sans-serif;
@@ -84,6 +85,30 @@ img {
   max-width: 100%;
   height: auto;
 }
+/*=========THEME=========*/
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+/*
+body.light-theme{
+  
+ --body-color: #260026;
+  --container-color: #4d014d;
+  --details-color: #c00dff;
+  
+  --black-color-light: #a0a0a0;
+  --white-color: #ffffff;
+  --white-dark: #adafb889;
+  --color-dark: #100010;*/
+
 /*-----REUSABLE CSS ------*/
 .container {
   max-width: 1120px;
