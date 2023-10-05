@@ -70,3 +70,41 @@ const scrollActive = () => {
   });
 };
 window.addEventListener("scroll", scrollActive);
+
+/*======LIGHT THEME=====*/
+/*
+const themeButton = document.getElementById("theme-button");
+const lightTheme = "light-theme";
+const iconTheme = "bx bxs-sun";
+
+//previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+//we obtain the current theme that the interface has by validating the light-theme class
+const getCurrentTheme = () =>
+  document.body.classList.contains(lightTheme) ? "light" : "dark";
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme) ? "bx bx-moon" : "bx bxs-sun";
+
+//we validate if the user previously chose a topic
+if (selectedTheme) {
+  //if the validation is fulfilled, we ask what the issue was to know if we activated or desactivated the light
+  document.body.classList[selectedTheme === "light" ? "add" : "remove"](
+    lightTheme
+  );
+  themeButton.classList[selectedIcon === "bx bx-moon" ? "add" : "remove"](
+    iconTheme
+  );
+}
+//Activate / desactivated the theme manually with the button
+
+themeButton.addEventListener("click", () => {
+  //add or remove the light / icon theme
+  document.body.classList.toggle(lightTheme);
+  themeButton.classList.toggle(iconTheme);
+  //we save the theme and the current icon that the user chose
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});
+*/

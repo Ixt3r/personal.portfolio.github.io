@@ -97,18 +97,18 @@ img {
   cursor: pointer;
   transition: color 0.3s;
 }
-/*
-body.light-theme{
-  
- --body-color: #260026;
-  --container-color: #4d014d;
-  --details-color: #c00dff;
-  
-  --black-color-light: #a0a0a0;
-  --white-color: #ffffff;
-  --white-dark: #adafb889;
-  --color-dark: #100010;*/
+/* ------LIGHT THEME-------
+body.light-theme {
+  --body-color: #e4f1ff;
+  --container-color: #aed2ff;
+  --details-color: #9400ff;
 
+  --black-color-light: #262626;
+  --white-color: #ffffff;
+  --white-dark: #a0a0a0;
+  --color-dark: #27005d;
+}
+*/
 /*-----REUSABLE CSS ------*/
 .container {
   max-width: 1120px;
