@@ -963,3 +963,147 @@ body.light-theme {
   }
 }
 /*large devices*/
+@media screen and (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
+  }
+  .section {
+    padding-block: 7rem 2rem;
+  }
+  .section-title-1::after,
+  .section-title-2::after {
+    width: 70px;
+    height: 48px;
+  }
+  .geometric-box {
+    transform: scale(1.2);
+  }
+  .nav {
+    height: calc(var(--header-height) + 2rem);
+    column-gap: 4rem;
+  }
+  .nav-close,
+  .nav-toggle,
+  .nav-title,
+  .nav-name {
+    display: none;
+  }
+  .nav-list {
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+  .nav-menu {
+    margin-left: auto;
+  }
+  .nav-link {
+    color: var(--black-color-light);
+    font-size: 20px;
+  }
+  .active-link {
+    color: var(--text-color-white);
+  }
+  .nav-link-button {
+    background-color: var(--container-color);
+    color: var(--text-color-white);
+    padding: 1.1rem 1.5rem;
+  }
+  /*
+  .nav-link-button:hover{
+    color: var(--text-color-white);
+  }
+  .nav-link-button::after{
+    background-color: transparent;
+  }
+  
+  .change-theme {
+  }
+  */
+  .home-container {
+    grid-template-columns: repeat(2, 460px);
+    gap: 2rem 4rem;
+    align-items: center;
+    padding-block: 5.5rem;
+  }
+  .home-perfil {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .home-image {
+    width: 350px;
+  }
+  .home-shadow {
+    right: -1.25rem;
+    bottom: -1.25rem;
+    border: 6px solid white;
+  }
+  .home-name,
+  .home-description {
+    text-align: initial;
+  }
+  .home-name {
+    align-self: flex-end;
+  }
+  .home-info {
+    margin-top: 0;
+    align-self: flex-start;
+  }
+  .home-description {
+    position: relative;
+    font-size: 25px;
+    margin-bottom: 5.5rem;
+    padding-left: 3rem;
+  }
+  .home-description::after {
+    content: "";
+    width: 32px;
+    height: 2px;
+    background-color: var(--black-color-light);
+    position: absolute;
+    left: 0;
+    top: 14px;
+  }
+  /* /*-----SCROLL------
+  .home-scroll {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 0.75rem;
+  }
+  .home-scroll-text {
+    display: block;
+    color: var(--black-color-light);
+    font-weight: 600;
+  }
+  .home-scroll-box {
+    width: 44px;
+    height: 44px;
+  }
+  .home-scroll-box i {
+    font-size: 1.25rem;
+  }
+  */
+  .home-perfil .geometric-box {
+    top: 15rem;
+  }
+  .home-arrow {
+    top: 4.5rem;
+    left: -8rem;
+    rotate: 80deg;
+    width: 80px;
+  }
+  /*
+  .home-line {
+    left: -15rem;
+    bottom: 4rem;
+    width: 80px;
+    rotate: 30deg;
+  }*/
+  .home-social {
+    left: initial;
+    right: -6rem;
+  }
+  .home-social-link {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
