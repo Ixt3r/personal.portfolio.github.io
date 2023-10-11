@@ -579,7 +579,7 @@ body.light-theme {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 4px solid var(--container-color);
+  border: 4px solid var(--details-color);
   top: 0;
   left: 0;
   transition: transform 0.4s;
@@ -1173,5 +1173,28 @@ body.light-theme {
   }
   .button-ghost i {
     font-size: 1.5rem;
+  }
+  /*services*/
+  .services-container {
+    grid-template-columns: repeat(3, 285px);
+    column-gap: 5rem;
+    padding-block: 3rem 5rem;
+  }
+  .services-content {
+    padding: 6.5rem 1.5rem 3.5rem;
+    border: 4px solid var(--white-color);
+  }
+  .services-icon i {
+    font-size: 3rem;
+  }
+  .services-box {
+    width: 32px;
+    height: 32px;
+  }
+  .services-title {
+    margin-bottom: 1.5rem;
+  }
+  .services-card:hover .services-border {
+    transform: translate(1.25rem, 1.25rem);
   }
 }
