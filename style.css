@@ -1269,7 +1269,14 @@ body.light-theme {
     font-size: 1.5rem;
     padding: 0.5rem;
   }
-  /*  .contact-message{}
-  
-  */
+  /*  .contact-message{} */
+  .footer-container {
+    padding-block: 4rem;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
+  .footer-link {
+    column-gap: 3rem;
+    order: 1;
+  }
 }
