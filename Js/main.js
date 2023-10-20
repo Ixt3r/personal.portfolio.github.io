@@ -38,6 +38,38 @@ const shadowHeader = () => {
 };
 window.addEventListener("scroll", shadowHeader);
 /*------E-MAIL-----------*/
+const contactForm = document.getElementById("contact-form"),
+  contactMessage = document.getElementById("contact-message");
+
+const sendEmail = (e) => {
+  e.preventDefault();
+  //serviceID - templateID - #Form - publicKey
+  emailjs
+    .sendForm(
+      "service_p6ms3uk",
+      "template_7iezbih",
+      "#contact-form",
+      "-1rQDcNdcP8KJdFot"
+    )
+    .then(
+      () => {
+        //show sent message
+        contactMessage.textContent = "Mensagem enviada com sucesso!";
+
+        //remove message after tree seconds
+        setTimeout(() => {
+          contactMessage.textContent = "";
+        }, 3000);
+        //clear input fields
+        contactForm.reset();
+      },
+      () => {
+        //show error message
+        contactMessage.textContent = "Mensagem não enviada - Erro de serviço";
+      }
+    );
+};
+contactForm.addEventListener("submit", sendEmail);
 /*------Show scroll up ---------*/
 const scrollUp = () => {
   const scrollUp = document.getElementById("scroll-up");
