@@ -460,7 +460,7 @@
                     required
                     placeholder="E-mail"
                   />
-                  <label for="name" class="contact-label">E-mail </label>
+                  <label for="email" class="contact-label">E-mail </label>
                 </div>
               </div>
               <div class="contact-box">
@@ -472,7 +472,7 @@
                   required
                   placeholder="Assunto"
                 />
-                <label for="name" class="contact-label">Assunto </label>
+                <label for="subject" class="contact-label">Assunto </label>
               </div>
 
               <div class="contact-box contact-area">
@@ -488,9 +488,11 @@
                 <label for="message" class="contact-label">Mensagem </label>
               </div>
 
-              <p class="contact-message" id="contact-message"></p>
+              <p class="contact-message" id="contact-message">
+                Mensagem enviada com sucesso!
+              </p>
 
-              <button class="contact-button button">
+              <button type="submit" class="contact-button button">
                 <i class="bx bx-send"></i>Enviar mensagem
               </button>
             </form>
@@ -553,6 +555,8 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="bx bx-chevron-up"></i>
     </a>
+    <!------Email JS----->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!--JS-->
     <script src="Js/main.js"></script>
   </body>
