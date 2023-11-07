@@ -901,6 +901,13 @@ body.light-theme {
 .contact-social-link:hover {
   background-color: var(--details-color);
 }
+.contact-message {
+  color: var(--text-color-white);
+  font-size: 14px;
+  position: absolute;
+  bottom: -1.6rem;
+  left: 0;
+}
 /*  ----- FOOTER ------------ */
 .footer {
   background-color: #100010;
